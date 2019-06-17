@@ -1,0 +1,39 @@
+<assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.0.0 http://maven.apache.org/xsd/assembly-2.0.0.xsd">
+    <id>bin</id>
+    <formats>
+        <format>dir</format>
+        <format>zip</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+
+
+
+    <files>
+        <file>
+            <source>../server/scripts/startServer.bat</source>
+            <outputDirectory>.</outputDirectory>
+        </file>
+        <file>
+            <source>../client/scripts/startClient.bat</source>
+            <outputDirectory>.</outputDirectory>
+        </file>
+    </files>
+
+
+    <moduleSets>
+        <moduleSet>
+
+            <useAllReactorProjects>true</useAllReactorProjects>
+            <includes>
+                <include>com.rsp:client</include>
+                <include>com.rsp:server</include>
+            </includes>
+            <binaries>
+                <outputDirectory>libs</outputDirectory>
+                <unpack>false</unpack>
+            </binaries>
+        </moduleSet>
+    </moduleSets>
+</assembly>
