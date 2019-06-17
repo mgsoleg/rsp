@@ -143,7 +143,7 @@ class ClientGameManager {
     }
 
     private void processOKFor(ServerOutEvent serverOutEvent) {
-
+        System.out.println();
         System.out.println(new StringBuilder()
                 .append("Great Machine choice is ")
                 .append(this.previousRoundMachineChoice)
