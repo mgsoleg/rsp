@@ -155,6 +155,7 @@ class ClientGameManager {
 
     private boolean endGameFor(String move) {
         if (GAME_END.equalsIgnoreCase(move)) {
+            socket.close();
             System.out.println("See you next time. Please learn some math before attempt to beat Great Machine.");
             return true;
         }
@@ -165,6 +166,7 @@ class ClientGameManager {
         if (STOP_SERVER.equalsIgnoreCase(move)) {
             try {
                 stopServerFor();
+                socket.close();
                 System.out.println("Apparently you decided to stop server. Bye!");
                 return true;
             } catch (IOException e) {
