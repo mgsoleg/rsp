@@ -24,37 +24,5 @@
             <scope>compile</scope>
         </dependency>
     </dependencies>
-    <!--<build>-->
-        <!--<plugins>-->
-            <!--<plugin>-->
-                <!--<groupId>org.apache.maven.plugins</groupId>-->
-                <!--<artifactId>maven-compiler-plugin</artifactId>-->
-                <!--<configuration>-->
-                    <!--<source>1.8</source>-->
-                    <!--<target>1.8</target>-->
-                <!--</configuration>-->
-                <!--<executions>-->
-                    <!--<execution>-->
-                        <!--<id>default-compile</id>-->
-                        <!--<configuration>-->
-                            <!--<compilerArgument>-proc:none</compilerArgument>-->
-                            <!--<includes>-->
-                                <!--<include>com/rsp/protocol/ProtocolProcessor.java</include>-->
-
-                                <!--&lt;!&ndash;include dependencies required for LogMeCustomAnnotationProcessor &ndash;&gt;-->
-                            <!--</includes>-->
-                        <!--</configuration>-->
-                    <!--</execution>-->
-                    <!--<execution>-->
-                        <!--<id>compile-project</id>-->
-                        <!--<phase>compile</phase>-->
-                        <!--<goals>-->
-                            <!--<goal>compile</goal>-->
-                        <!--</goals>-->
-                    <!--</execution>-->
-                <!--</executions>-->
-            <!--</plugin>-->
-        <!--</plugins>-->
-    <!--</build>-->
 
 </project>

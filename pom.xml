@@ -17,20 +17,6 @@
         <module>dist</module>
     </modules>
 
-    <repositories>
-        <repository>
-            <id>icm</id>
-            <url>http://maven.icm.edu.pl/artifactory/repo/</url>
-        </repository>
-
-        <!--<repository>-->
-            <!--<id>nuiton</id>-->
-            <!--<url>http://maven.nuiton.org/release/</url>-->
-        <!--</repository>-->
-
-    </repositories>
-
-
     <dependencies>
         <dependency>
             <groupId>com.lmax</groupId>
